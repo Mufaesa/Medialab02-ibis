@@ -1,0 +1,34 @@
+
+body{
+top: 0;
+left: 0;
+}
+
+#map {
+    width: 662px;
+    height: 709px;
+    background-image: url("images/plattegrond.PNG");
+    float: left;
+}
+
+.clicked {
+    opacity: 0.5;
+}
+
+#table1{
+    position: absolute;
+    z-index: 2;
+    top: 190px;
+    left: 145px;
+    background-image:url("images/tafeltje-open.PNG");
+    width: 85px;
+    height: 116px;
+}
+
+#table1:hover{
+    background-image:url("images/tafeltje-hover.PNG");
+}
+
+#sidebar {
+    display: none;
+}
