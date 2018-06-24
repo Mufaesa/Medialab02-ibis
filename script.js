@@ -13,6 +13,7 @@ reserveBtn.addEventListener("click", function(){
   table.style.backgroundImage = "url('images/tafeltje-gereserveerd.PNG')";
   sidebar.style.display = "none";
   map.classList.remove("clicked");
+  alert("Bedankt voor de reservering.");
 });
 
 
