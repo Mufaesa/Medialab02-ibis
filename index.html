@@ -2,29 +2,70 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IBIS plattegrond</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <!-- <img src="images/tafeltje-open.PNG" id="table1"> -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IBIS plattegrond</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
+    <link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
         <div id="table1"></div>
 
         <div id="map"></div>
         <div id="overlay"></div>
 
-        <!-- <img src="images/Plattegrond.PNG" id="map"> -->
 
         <div id="sidebar">
-            Hier komt het reserveringsformulier
+            <div id="reservationTable"></div>
+
+            <form>
+                <div class="slidecontainer">
+                    <p style="font-size: 16px; font-weight: bold; text-align: left; margin-bottom: 5px;">Selecteer aantal stoelen</p>
+                    <input type="range" min="" max="2" value="0" class="slider" id="myRange">
+                    <p style="font-size: 16px; font-weight: bold; text-align: left; margin-bottom: 5px;">Stoelen:
+                        <span id="demo"></span>
+                    </p>
+                </div>
+
+                <div class="formPart">
+                    Datum:
+                    <input type="date" id="date">
+                </div>
+                <br>
+
+                <div class="formPart">
+                    Van:
+                    <input type="time" id="timeFrom" step=300>
+                </div>
+
+                <div class="formPart">
+                    Tot:
+                    <input type="time" id="timeTill" step=300>
+                </div>
+                <br>
+
+                <div id="btn">
+                    Reserveer nu
+                </div>
+            </form>
         </div>
-        
-        <script src="script.js" async defer></script>
-    </body>
+
+    </div>
+
+    <script src="script.js" async defer></script>
+
+</body>
+
 </html>

@@ -2,6 +2,12 @@
 body{
 top: 0;
 left: 0;
+font-family: sans-serif;
+background-color: #fdfdfd;
+}
+
+#container{
+    width: 1200px;
 }
 
 #map {
@@ -9,6 +15,7 @@ left: 0;
     height: 709px;
     background-image: url("images/plattegrond.PNG");
     float: left;
+    margin-right: 18px;
 }
 
 .clicked {
@@ -18,8 +25,8 @@ left: 0;
 #table1{
     position: absolute;
     z-index: 2;
-    top: 190px;
-    left: 145px;
+    top: 191px;
+    left: 140px;
     background-image:url("images/tafeltje-open.PNG");
     width: 85px;
     height: 116px;
@@ -31,4 +38,82 @@ left: 0;
 
 #sidebar {
     display: none;
+    width: 520px;
+    text-align: center;
+}
+
+#reservationTable{
+    background-image: url("images/tafeltje-clean.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 115px;
+    height: 146px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #f9d97f;
+    border-width: 2px;
+    box-shadow: 2px 2px #888888
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#btn{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: #7bb488;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    left: 80%;
+    float: right;
+}
+
+#btn:hover{
+    background-color: #4CAF50;
+}
+
+.formPart{
+    margin-bottom: 15px;
+    display: inline-block;
 }
